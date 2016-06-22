@@ -1,26 +1,41 @@
 {
   "name": "leaflet.markercluster.layersupport",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Sub-plugin for Leaflet.markercluster. Brings compatibility with L.Control.Layers",
-  "main": "leaflet.markercluster.layersupport-src.js",
+  "main": "dist/leaflet.markercluster.layersupport.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/jake/bin/cli.js lint",
+    "prepublish": "./node_modules/jake/bin/cli.js build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rey-awesense/Leaflet.MarkerCluster.LayerSupport.git"
   },
-  "author": "https://github.com/ghybs",
+  "keywords": [
+    "leaflet",
+    "leaflet.markercluster",
+    "plugins",
+    "maps",
+    "layersupport"
+  ],
+  "author": "Boris Seang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rey-awesense/Leaflet.MarkerCluster.LayerSupport/issues"
   },
   "homepage": "https://github.com/rey-awesense/Leaflet.MarkerCluster.LayerSupport#readme",
-  "dependencies": {
-    "leaflet": "^0.7.7",
-    "leaflet.markercluster": "^0.4.0"
+  "peerDependencies": {
+    "leaflet": "~1.0.0-rc.1",
+    "leaflet.markercluster": "~1.0.0-rc.1"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "jake": "^8.0.12",
+    "jshint": "^2.9.2",
+    "lodash": "^4.13.1",
+    "uglify-js": "^2.6.3"
   }
 }
