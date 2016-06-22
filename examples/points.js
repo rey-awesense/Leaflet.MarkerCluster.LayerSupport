@@ -1,4 +1,4 @@
-{
+var points = {
     "type": "FeatureCollection",
     "features": [
         {

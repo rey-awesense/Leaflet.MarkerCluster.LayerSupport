@@ -21,6 +21,7 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+    <script src="points.js"></script>
 </head>
 <body>
 
@@ -52,27 +53,22 @@
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    var testlayer = L.geoJson(points);
 
-    //Fetch some data from a GeoJSON file
-    $.getJSON("points.json", function(json) {
+    // Check into MCG Layer Support!
+    // Add to map first before checking in.
+    L.markerClusterGroup.layerSupport().addTo(map).checkIn(testlayer);
 
-        var testlayer = L.geoJson(json);
-
-        // Check into MCG Layer Support!
-        // Add to map first before checking in.
-        L.markerClusterGroup.layerSupport().addTo(map).checkIn(testlayer);
-
-        var sliderControl = L.control.sliderControl({
-            position: "topright",
-            layer: testlayer,
-            range: true
-        });
-
-        //Make sure to add the slider to the map ;-)
-        map.addControl(sliderControl);
-        //And initialize the slider
-        sliderControl.startSlider();
+    var sliderControl = L.control.sliderControl({
+        position: "topright",
+        layer: testlayer,
+        range: true
     });
+
+    //Make sure to add the slider to the map ;-)
+    map.addControl(sliderControl);
+    //And initialize the slider
+    sliderControl.startSlider();
 </script>
 
 </body>
