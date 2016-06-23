@@ -1,6 +1,6 @@
 {
   "name": "leaflet.markercluster.layersupport",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Sub-plugin for Leaflet.markercluster. Brings compatibility with L.Control.Layers",
   "main": "dist/leaflet.markercluster.layersupport.js",
   "directories": {

@@ -1,5 +1,5 @@
 /**
- * @license leaflet.markercluster.layersupport v1.0.0
+ * @license leaflet.markercluster.layersupport v1.0.0-rc.1
  * Sub-plugin for Leaflet.markercluster. Brings compatibility with L.Control.Layers
  * (c) 2015-2016 Boris Seang
  * License: MIT
@@ -27,7 +27,7 @@ var LMCGproto = LMCG.prototype;
  */
 LMCG.LayerSupport = LMCG.extend({
   statics: {
-    version: '1.0.0'
+    version: '1.0.0-rc.1'
   },
 
   options: {

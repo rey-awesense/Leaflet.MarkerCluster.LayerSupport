@@ -10,7 +10,7 @@ var LMCGproto = LMCG.prototype;
  */
 LMCG.LayerSupport = LMCG.extend({
   statics: {
-    version: '1.0.0'
+    version: '1.0.0-rc.1'
   },
 
   options: {

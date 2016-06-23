@@ -11,7 +11,7 @@ provides beautiful animated Marker Clustering functionality.
 [Leaflet](http://leafletjs.com/) is the leading open-source JavaScript library
 for mobile-friendly interactive maps.
 
-Current LayerSupport version: 0.1.0
+Current LayerSupport version: v1.0.0-rc.1
 
 
 **NOTE:** _if your usage requires only compatibility of MCG with
@@ -21,8 +21,8 @@ you might be interested in this more simple plugin:
 
 
 ## Requirements
-- Requires Leaflet 1.0.0-rc.1
-- For Leaflet 0.7.x use the Leaflet stable (0.7.x)
+- Requires Leaflet v1.0.0-rc.1
+- For Leaflet v0.7.x use the the leaflet branch [leaflet-0.7.x](https://github.com/rey-awesense/Leaflet.MarkerCluster.LayerSupport/tree/leaflet-0.7.x)
 - [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) plugin
 
 
